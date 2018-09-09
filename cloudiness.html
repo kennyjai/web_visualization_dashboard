@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Visualization Dashboard</title>
+
+    <!-- Bring in our bootstrap stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<nav class="navbar navbar-default" role="navigation">
+  		<div class="container-fluid">
+    	<!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		    	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+	                <span class="sr-only">Toggle navigation</span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	                <span class="icon-bar"></span>
+	            </button>
+		    	<a class="navbar-brand" href="index.html">Latitude</a>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <ul class="nav navbar-nav navbar-right">
+		        <li class="dropdown">
+		          	<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+		      		<ul class="dropdown-menu">
+		              <li><a href="temperature.html">Max Temperature</a></li>
+		              <li><a href="humidity.html">Humidity</a></li>
+		              <li><a href="cloudiness.html">Cloudiness</a></li>
+		              <li><a href="wind.html">Wind Speed</a></li>
+		            </ul>
+		          </li>
+		        <li><a href="comparison.html">Comparison</a></li>
+		        <li><a href="data.html">Data</a></li>
+		  	</ul>
+		</div>
+	<!-- /.container-fluid -->
+	</nav>
+
+	<div id="landing" class="container">
+		<div class="row">
+			<div class="col-sm-12 col-md-8">
+				<div class="main-content">
+					<h1> Cloudiness</h1>
+					<hr>
+					<p><img src="Resources/assets/images/Fig3.png" alt="Lat vs Cloudiness" style="width:600px;height:400px">
+					<br>
+	    			The cloudiness percentages observed in the various cities shows the most normally distributed percentages across the cities based on the distance from the equator (0 Deg. Latitude). When looking at the observations of the cities closest to the latitude, we do see a cluster of cities ranging from 0 to 40 latitude that observe a cloudiness percentage of 0. This can further support that the temperature is warmer as we approach the equator.
+	    			<br>
+	    			<br>
+    			</div>
+    		</div>
+
+			<div class="col-sm-12 col-md-4">
+				<div class="sidebar-content">
+					<h2>Visualizations</h2>
+					<hr>
+					<div class="row">
+						<div class="col-sm-3 col-md-6">
+							<a href="temperature.html"><img src="Resources/assets/images/Fig1.png" alt="Lat vs Temp" style="width:150px;height:150px"></a>
+						</div>
+						<div class="clearfix visible-sm-block"></div>
+						<div class="col=sm-3 col-md-6">
+							<a href="humidity.html"><img src="Resources/assets/images/Fig2.png" alt="Lat vs Humidity" style="width:150px;height:150px"></a>
+						</div>
+				        <div class="clearfix visible-sm-block"></div>
+						<div class="col=sm-3 col-md-6">
+							<a href="cloudiness.html"><img src="Resources/assets/images/Fig3.png" alt="Lat vs Cloudiness" style="width:150px;height:150px"></a>
+						</div>
+				        <div class="clearfix visible-sm-block"></div>
+						<div class="col=sm-3 col-md-6">							
+							<a href="wind.html"><img src="Resources/assets/images/Fig4.png" alt="Lat vs Wind" style="width:150px;height:150px"></a>
+						</div>
+						<br>
+						<br>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>    	
+</body>
+<br>
+</html>
